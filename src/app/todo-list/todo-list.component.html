@@ -1,0 +1,5 @@
+<app-list-item *ngFor="let item of getFavouriteTasks(true)" [listItem]="item"></app-list-item>
+<app-list-item *ngFor="let item of getFavouriteTasks(false)" [listItem]="item"></app-list-item>
+<div class="info-message" *ngIf="todoList.length == 0">
+  Vous n'avez aucune tache
+</div>
