@@ -7,10 +7,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeComponent implements OnInit {
 
-  listItemZero = {title: 'Do my video', dueDate: '23/06/2020', completed: true, favourite: true}
-  listItemUn = {title: 'Do my video', dueDate: '23/06/2020', completed: true, favourite: true}
-  listItemDeux = {title: 'Do my video', dueDate: '23/06/2020', completed: true, favourite: true}
-  listItemTrois = {title: 'Do my video', dueDate: '23/06/2020', completed: true, favourite: true}
+  listItems = [
+    /*{title: 'Do my video 1', dueDate: '23/06/2020', completed: true, favourite: false},
+    {title: 'Do my video 2', dueDate: '23/06/2020', completed: true, favourite: true},
+    {title: 'Do my video 3', dueDate: '23/06/2020', completed: true, favourite: true},
+    {title: 'Do my video 4', dueDate: '23/06/2020', completed: true, favourite: false}*/
+  ]
 
   constructor() { }
 
@@ -19,10 +21,7 @@ export class HomeComponent implements OnInit {
 
   logListItem() {
     console.table([
-      this.listItemZero,
-      this.listItemUn,
-      this.listItemDeux,
-      this.listItemTrois
+      this.listItems
     ])
   }
 }

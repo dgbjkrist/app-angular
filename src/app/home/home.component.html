@@ -1,7 +1,4 @@
 <div class="container">
-  <app-list-item [listItem]="listItemZero"></app-list-item>
-  <app-list-item [listItem]="listItemUn"></app-list-item>
-  <app-list-item [listItem]="listItemDeux"></app-list-item>
-  <app-list-item [listItem]="listItemTrois"></app-list-item>
-  <button mat-button color="primary" (click)="logListItem()">Display into console</button>
+  <app-todo-list [todoList]="listItems"></app-todo-list>
+  <button mat-button color="primary" (click)="logListItem()" *ngIf="listItems.length > 0">Display into console</button>
 </div>
