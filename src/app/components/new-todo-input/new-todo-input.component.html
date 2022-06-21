@@ -1,0 +1,7 @@
+<form [formGroup]="newItemForm" #formDirective="ngForm">
+  <mat-form-field class="">
+    <input matInput type="text" class="" formControlName="itemName" (keyup.enter)="addItem($event, formDirective)"
+    placeholder="item name"
+    >
+  </mat-form-field>
+</form>
