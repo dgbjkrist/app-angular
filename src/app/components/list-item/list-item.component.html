@@ -2,7 +2,7 @@
   <div id="list-check">
     <mat-checkbox [(ngModel)]="listItem.completed"></mat-checkbox>
   </div>
-  <div id="list-item-content">
+  <div id="list-item-content" (click)="openDialog()">
     <div class="title">{{listItem.title}}</div>
     <div class="due-date">{{listItem.dueDate}}</div>
   </div>

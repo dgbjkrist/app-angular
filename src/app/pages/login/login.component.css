@@ -1,0 +1,27 @@
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.example-card {
+  width: 90%;
+  max-width: 400px;
+}
+
+mat-card-header {
+  display: block;
+  text-align: center;
+}
+
+.mat-form-field {
+  margin: 8px;
+  padding: 8px;
+  width: calc(100% - 32px);
+}
+
+mat-card-actions {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
