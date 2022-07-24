@@ -22,6 +22,7 @@ import { DialogInformationComponent } from './components/dialog-information/dial
 import { DialogQuestionComponent } from './components/dialog-question/dialog-question.component';
 import { LoginComponent } from './pages/login/login.component';
 import {MatCardModule} from '@angular/material/card';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -49,7 +50,8 @@ import {MatCardModule} from '@angular/material/card';
     ReactiveFormsModule,
     MatInputModule,
     MatDialogModule,
-    MatCardModule
+    MatCardModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
